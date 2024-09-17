@@ -10,7 +10,7 @@ The objective of this project is to analyze Netflix's movies and TV shows data u
 
 ## Problem And Solution
 
-## 1) Content Type Distribution
+### 1) Content Type Distribution
 select distinct `type` from netflix_titles;
 
 
