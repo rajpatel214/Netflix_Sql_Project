@@ -49,6 +49,17 @@ select * from netflix_titles where `cast` like '%salman khan%' and release_year 
 ### 19)Categorizing Content by Keywords 'Kill' or 'Violence'
 with New_table as ( select *, case when description like '%kill%' or description like '%violence%' then 'bad_flim' else 'good_flim' end category from netflix_titles ) select category, count(*) as table_content from New_table group by 1;
 
+## Finding and Conclusion 
+We explored Netflix's content to identify popular movies, distinct content types, and the most common ratings.
+Analyzed content from India, including movies, TV shows, and directors like Rohit Shetty.
+Found the longest movies and TV shows with more than 5 seasons.
+Categorized content by genres and popular release years from different countries, including India.
+Identified movies and shows with specific themes like 'violence' or featuring actors like Salman Khan.
+
+This project provides a comprehensive SQL analysis of Netflix's global content library. It highlights various aspects such as content type, release years, country-specific releases, director contributions, and popular genres. By using SQL queries, we can easily extract meaningful insights and explore patterns within the data, assisting in decision-making for content creation and viewer analysis.
+
+
+
 
 
 
